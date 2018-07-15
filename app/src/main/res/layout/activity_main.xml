@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:backgroundTint="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        app:menu_fab_label=""
+        app:menu_openDirection="up"
+        app:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#000000"
+            app:fab_label="Home"
+            app:fabSize="mini"
+            android:id="@+id/home"
+            app:srcCompat="@android:drawable/ic_menu_delete"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#000000"
+            app:fab_label="Contact"
+            app:fabSize="mini"
+            android:id="@+id/contacts"
+            app:srcCompat="@android:drawable/ic_menu_help"
+            />
+
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>
